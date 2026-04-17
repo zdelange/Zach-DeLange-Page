@@ -5,129 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'EB Garamond', serif;
-      color: #111;
-      background: #fff;
-      min-height: 100vh;
-    }
-
-    /* ── Navbar ── */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 96px;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 48px;
-      z-index: 100;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-family: 'EB Garamond', serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: opacity 0.2s;
-    }
-
-    nav a:hover { opacity: 0.7; }
-
-    .nav-right {
-      display: flex;
-      gap: 32px;
-    }
-
-    /* ── Main content ── */
-    main {
-      margin-top: 96px;
-      padding: 60px 48px 80px;
-      max-width: 860px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* ── Page title ── */
-    .page-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
-      font-weight: 900;
-      line-height: 1.1;
-      color: #000;
-      border-bottom: 3px solid #000;
-      padding-bottom: 20px;
-      margin-bottom: 48px;
-      text-align: center;
-    }
-
-    /* ── Section headings ── */
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #000;
-      margin-top: 44px;
-      margin-bottom: 14px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    /* ── Body text ── */
-    p {
-      font-size: 1.1rem;
-      line-height: 1.75;
-      margin-bottom: 10px;
-    }
-
-    strong {
-      font-weight: 600;
-    }
-
-    /* ── Lists ── */
-    ul {
-      list-style: disc;
-      padding-left: 1.6rem;
-      margin-bottom: 10px;
-    }
-
-    ul li {
-      font-size: 1.05rem;
-      line-height: 1.75;
-      margin-bottom: 4px;
-    }
-
-    /* ── Summary block ── */
-    .summary {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: #222;
-    }
-
-    .divider {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 48px 0;
-    }
-  </style>
+  <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <div class="nav-right">
@@ -135,20 +16,17 @@
     </div>
   </nav>
 
-  <main>
+  <main class="resume-main">
     <h1 class="page-title">My Resume</h1>
 
-    <!-- Professional Summary -->
     <h2>Professional Summary</h2>
     <p class="summary">Motivated BYU student with experience in field sales, customer communication, physical operations, coaching, and service leadership. Brings strong interpersonal skills, teamwork, adaptability, and bilingual communication in English and Spanish. Experience includes direct customer interaction, training others, organizing teams, and working in fast-paced, service-oriented environments.</p>
 
-    <!-- Education -->
     <h2>Education</h2>
     <p><strong>Brigham Young University</strong> — Provo, Utah<br />
     Student<br />
     2022–2028</p>
 
-    <!-- Experience -->
     <h2>Experience</h2>
 
     <p><strong>Field Sales Representative</strong><br />
@@ -187,7 +65,6 @@
       <li>Helped build teamwork, competitiveness, and a winning mindset among campers.</li>
     </ul>
 
-    <!-- Volunteer Experience -->
     <h2>Volunteer Experience</h2>
 
     <p><strong>Missionary</strong><br />
@@ -199,7 +76,6 @@
       <li>Led conferences, directed teams, and helped build vision and culture within the mission structure.</li>
     </ul>
 
-    <!-- Skills -->
     <h2>Skills</h2>
     <ul>
       <li>Sales</li>
@@ -212,7 +88,6 @@
       <li>Team Building</li>
     </ul>
 
-    <!-- Languages -->
     <h2>Languages</h2>
     <ul>
       <li>English — Native or bilingual proficiency</li>
