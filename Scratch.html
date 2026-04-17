@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiger Woods Top 3 Moments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: 'EB Garamond', serif;
+      color: #111;
+    }
+
+    /* ── Navbar ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 96px; /* 1 inch at 96dpi */
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* ── Main content ── */
+    main {
+      margin-top: 96px;
+      padding: 60px 48px 80px;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      border-bottom: 3px solid #000;
+      padding-bottom: 20px;
+      margin-bottom: 60px;
+    }
+
+    .page-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: #000;
+      margin: 0;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: min(320px, 100%);
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .page-header {
+        flex-direction: column;
+      }
+    }
+
+    /* ── Moment section ── */
+    .moment {
+      margin-bottom: 64px;
+    }
+
+    .moment-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .moment-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 1.1em;
+      background: #000;
+      flex-shrink: 0;
+    }
+
+    /* ── Video placeholder ── */
+    .video-placeholder {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #f0f0f0;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      letter-spacing: 0.03em;
+      margin-bottom: 0;
+    }
+
+    .video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 60px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <div class="page-header">
+      <h1 class="page-title">Tiger Woods<br>Top 3 Moments</h1>
+      <img class="hero-image" src="Tiger.jpg" alt="Tiger Woods" />
+    </div>
+
+    <!-- Moment 1 -->
+    <div class="moment">
+      <h2 class="moment-title">2005 Masters Chip-In on 16</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/DZ0U3qB5kLY?si=zYvaFD9IJn_VhVfw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Moment 2 -->
+    <div class="moment">
+      <h2 class="moment-title">2000 U.S. Open at Pebble Beach</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/FAH52VOtrh8?si=59bOzLhzlNremxXH"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Moment 3 -->
+    <div class="moment">
+      <h2 class="moment-title">2019 Masters Comeback</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/al89FoZVckM?si=BY0pimWRdrWNbOGg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
