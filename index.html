@@ -1,67 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Full Width Pics - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            body {
-                background-image: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('Golf.webp');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                background-attachment: fixed;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html" style="border: 1px solid white; padding: 0.2rem 0.5rem; border-radius: 0.25rem;">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index2.html">Index 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Scratch.html">My Work</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header -->
-        <header class="py-4">
-            <div class="text-center my-3">
-                <img class="img-fluid rounded-circle mb-4" src="MyPhoto.jpeg" alt="My photo" style="width: 220px; height: 220px; object-fit: cover; position: relative; top: 60px;" />
-            </div>
-        </header>
-        <!-- Content section-->
-        <section class="py-3">
-            <div class="container my-2">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-5 text-center mx-auto">
-                        <p class="fs-4 mt-4" style="line-height: 1.6;">Hi! I'm Zach DeLange!<br />Here's is this page with a little bit about me and the things I love!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      color: #111;
+      background-image: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('Golf.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    /* ── Navbar ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 96px;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 32px;
+    }
+
+    /* ── Main content ── */
+    main {
+      margin-top: 96px;
+      padding: 60px 48px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── Profile photo ── */
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    /* ── Intro text ── */
+    .intro {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.5rem;
+      line-height: 1.7;
+      text-align: center;
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="nav-right">
+      <a href="resume.html">Resume</a>
+      <a href="Scratch.html">My Work</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <img class="profile-photo" src="MyPhoto.jpeg" alt="My photo" />
+    <p class="intro">
+      Hi! I'm Zach DeLange!<br />
+      Here is this page with a little bit about me and the things I love!
+    </p>
+  </main>
+
+  <!-- Bootstrap core JS (kept in case other pages need it) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 </html>
